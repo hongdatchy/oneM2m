@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.eclipse.om2m.core.controller.AEController" project="org.eclipse.om2m.core" 
+    file="/org.eclipse.om2m.core/src/main/java/org/eclipse/om2m/core/controller/AEController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="339" y="-26"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.eclipse.om2m.core.controller.Controller" project="org.eclipse.om2m.core" 
+    file="/org.eclipse.om2m.core/src/main/java/org/eclipse/om2m/core/controller/Controller.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="438" width="196" x="-30" y="-103"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.eclipse.om2m.commons.entities.AeEntity" project="org.eclipse.om2m.commons" 
+    file="/org.eclipse.om2m.commons/src/main/java/org/eclipse/om2m/commons/entities/AeEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="184" x="563" y="247"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="org.eclipse.om2m.persistence.service.DAO" 
+    project="org.eclipse.om2m.persistence.service" 
+    file="/org.eclipse.om2m.persistence.service/src/main/java/org/eclipse/om2m/persistence/service/DAO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="384" y="164"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="org.eclipse.om2m.persistence.eclipselink.internal.DAOFactoryImpl" 
+    project="org.eclipse.om2m.persistence.eclipselink" 
+    file="/org.eclipse.om2m.persistence.eclipselink/src/main/java/org/eclipse/om2m/persistence/eclipselink/internal/DAOFactoryImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="150" width="222" x="521" y="56"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.eclipse.om2m.persistence.eclipselink.internal.dao.AeDAO" 
+    project="org.eclipse.om2m.persistence.eclipselink" 
+    file="/org.eclipse.om2m.persistence.eclipselink/src/main/java/org/eclipse/om2m/persistence/eclipselink/internal/dao/AeDAO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="111" width="232" x="270" y="411"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="org.eclipse.om2m.persistence.eclipselink.internal.dao.AbstractDAO" 
+    project="org.eclipse.om2m.persistence.eclipselink" 
+    file="/org.eclipse.om2m.persistence.eclipselink/src/main/java/org/eclipse/om2m/persistence/eclipselink/internal/dao/AbstractDAO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="94" width="255" x="255" y="276"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
